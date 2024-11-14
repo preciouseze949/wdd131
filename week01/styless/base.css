@@ -1,0 +1,125 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Primary font, replace with your choice */
+    color: #333;
+    /* Base text color */
+    background-color: #f4f4f9;
+    /* Background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+/* Header Styling */
+header h1 {
+    width: 100%;
+    background-color: #d17913;
+    /* Header background color */
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header nav {
+    width: 100%;
+    background-color: #003f5c;
+    /* Header background color */
+    color: #fff;
+    padding: 1.5rem;
+    text-align: left;
+    justify-content: space-around;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffa600;
+    /* Hover effect color */
+    border-radius: 4px;
+}
+
+/* Main Content Styling */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    grid-template-columns: 1fr;
+    /* Single column layout on smaller screens */
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #003f5c;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.card a {
+    color: #ffa600;
+    /* Link color */
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        /* Two-column layout for larger screens */
+    }
+}

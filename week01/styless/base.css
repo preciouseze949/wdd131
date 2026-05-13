@@ -1,0 +1,241 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Primary font, replace with your choice */
+    color: #333;
+    /* Base text color */
+    background-color: #f4f4f9;
+    /* Background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+/* Header Styling */
+header h1 {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #003f5c;
+    /* Header background color */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav {
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    /* Header background color */
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+    justify-content: space-around;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffa600;
+    /* Hover effect color */
+    border-radius: 4px;
+}
+
+/* Main Content Styling */
+.main {
+    /* width: 90%; */
+    max-width: 1000px;
+    /* height: 90vh; */
+    margin: 2rem auto;
+    display: flex;
+    grid-template-columns: 1fr;
+    /* Single column layout on smaller screens */
+    gap: 1.5rem;
+}
+
+.card {
+    width: 70%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* display: flex; */
+    padding-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card h2 {
+    color: #003f5c;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.card a {
+    color: #ffa600;
+    /* Link color */
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card2 {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* padding: 1.5rem; */
+    padding-bottom: 1.5rem;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card2 h2 {
+    color: #003f5c;
+    margin-bottom: 1rem;
+}
+
+.card2 p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.card2 a {
+    /* color: #ffa600; */
+    /* Link color */
+    text-decoration: none;
+}
+
+.card2 a:hover {
+    text-decoration: underline;
+}
+
+.city {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.text h2 {
+    text-align: center;
+    /* border-bottom: 5px black; */
+}
+
+.text img {
+    /* margin-right: 200px; */
+}
+
+.about {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #003f5c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.about p {
+    font-size: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.box {
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.text {
+    width: 80%;
+}
+
+.city {
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+.cityp {
+    width: 80%;
+}
+
+.img2 {
+    /* width: 15%; */
+}
+
+.img2 figcaption {
+    font-family: cursive;
+    font-style: italic;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+
+.img {
+    width: 25%;
+}
+
+.link {
+    padding: 50px;
+    margin: 60px auto;
+}
+
+.name {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        /* Two-column layout for larger screens */
+    }
+}

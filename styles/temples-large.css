@@ -1,0 +1,36 @@
+@media screen and (min-width: 640px) {
+
+    .grid {
+
+        /* TABLET = 2 COLUMNS */
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    /* HIDE HAMBURGER */
+    #menuBtn {
+        display: none;
+    }
+
+    /* SHOW NAVIGATION */
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* DESKTOP = 3 COLUMNS */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

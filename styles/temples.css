@@ -122,6 +122,10 @@ footer {
 
     }
 
+    .temp {
+        display: none;
+    }
+
     #menuBtn {
         display: block;
         /* hide hamburger */

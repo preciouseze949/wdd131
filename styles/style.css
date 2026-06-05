@@ -53,3 +53,42 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #005fa3;
 }
+
+/* MOBILE FIRST - default styles already apply */
+
+/* TABLET */
+@media (min-width: 600px) {
+    main {
+        max-width: 700px;
+        padding: 30px;
+    }
+
+    form {
+        gap: 15px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 1rem;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+    main {
+        max-width: 800px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    fieldset,
+    textarea,
+    input[type="submit"] {
+        grid-column: span 2;
+    }
+}

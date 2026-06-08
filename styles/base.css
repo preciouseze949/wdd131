@@ -89,10 +89,6 @@ nav a:hover {
 
 }
 
-.box {
-    display: grid;
-}
-
 .card h2 {
     color: #003f5c;
     margin-bottom: 1rem;
@@ -191,7 +187,7 @@ footer p {
 }
 
 .box {
-    display: flex;
+    display: grid;
     /* justify-content: space-evenly; */
     padding-left: 20px;
     padding-top: 20px;
@@ -199,6 +195,7 @@ footer p {
 
 .text {
     width: 80%;
+    position: relative;
 }
 
 .cityp {
@@ -218,6 +215,8 @@ footer p {
 
 .img {
     width: 25%;
+    position: absolute;
+    right: 21%;
 }
 
 .link {

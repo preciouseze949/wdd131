@@ -3,34 +3,139 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Rantimi's Flair fashion collections page">
+    <meta name="description"
+        content="Browse fashion collections from Rantimi's Flair including shirts, hoodies, jackets, shoes, and accessories.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Precious Anietem">
 
-    <title>Collections</title>
+    <title>Rantimi's Flair | Collections</title>
 
     <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <script defer src="scripts/main.js"></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Collections</h1>
 
-        <nav>
+        <div class="logo">
+            <h1>Rantimi's Flair</h1>
+            <p>Style • Confidence • Individuality</p>
+        </div>
+
+        <button id="menu-btn" aria-label="Toggle Navigation">
+            ☰
+        </button>
+
+        <nav id="navigation">
             <a href="index.html">Home</a>
-            <a href="collections.html">Collections</a>
+            <a href="collections.html" class="active">Collections</a>
             <a href="contact.html">Contact</a>
         </nav>
+
     </header>
 
-    <section class="section">
-        <h2>All Fashion Items</h2>
-        <div class="grid" id="products"></div>
-    </section>
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-banner">
+
+            <h2>Our Collections</h2>
+
+            <p>
+                Explore stylish clothing, footwear, hoodies,
+                jackets, and accessories designed for modern fashion lovers.
+            </p>
+
+        </section>
+
+        <!-- FILTER BUTTONS -->
+        <section class="filters">
+
+            <h2>Browse Categories</h2>
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn" data-category="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-category="shirts">
+                    Shirts
+                </button>
+
+                <button class="filter-btn" data-category="hoodies">
+                    Hoodies
+                </button>
+
+                <button class="filter-btn" data-category="jackets">
+                    Jackets
+                </button>
+
+                <button class="filter-btn" data-category="shoes">
+                    Shoes
+                </button>
+
+                <button class="filter-btn" data-category="accessories">
+                    Accessories
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="products-section">
+
+            <h2>Fashion Collection</h2>
+
+            <div id="productContainer" class="product-grid">
+
+                <!-- JavaScript inserts products -->
+
+            </div>
+
+        </section>
+
+        <!-- FAVORITES -->
+        <section class="favorites-section">
+
+            <h2>Your Favorites</h2>
+
+            <p>
+                Products you save will remain available
+                even after refreshing the page.
+            </p>
+
+            <div id="favoritesContainer" class="product-grid">
+
+                <!-- JavaScript inserts favorites -->
+
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
-        <a href="references.html">References</a>
+
+        <p>
+            &copy; <span id="currentYear"></span>
+            Rantimi's Flair
+        </p>
+
+        <a href="references.html">
+            References
+        </a>
+
     </footer>
 
 </body>

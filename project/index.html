@@ -3,15 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Rantimi's Flair fashion brand homepage showcasing modern style and collections">
+    <meta name="description"
+        content="Rantimi's Flair is a fashion hub where visitors explore collections, discover style inspiration, learn fashion trends, and connect with the brand.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Precious Anietem">
 
-    <title>Rantimi's Flair</title>
+    <title>Rantimi's Flair | Home</title>
 
     <link rel="stylesheet" href="styles/styles.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
     <script defer src="scripts/main.js"></script>
@@ -20,34 +25,155 @@
 <body>
 
     <header>
-        <h1>Rantimi's Flair</h1>
+        <div class="logo">
+            <h1>Rantimi's Flair</h1>
+            <p>Style • Confidence • Individuality</p>
+        </div>
 
-        <nav>
-            <a href="index.html">Home</a>
+        <button id="menu-btn" aria-label="Toggle Navigation">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
             <a href="collections.html">Collections</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <img src="https://images.unsplash.com/photo-1645785328498-fc3483dc7b2d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZWxlZ2FuY2V8ZW58MHx8MHx8fDA%3D"
-            alt="Fashion banner" loading="lazy">
+    <main>
 
-        <div class="hero-text">
-            <h2>Style. Elegance. Confidence.</h2>
-            <p>Discover fashion that defines your personality.</p>
-        </div>
-    </section>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1632643962762-097c26712031?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWxlZ2FuY2V8ZW58MHx8MHx8fDA%3D"
+                alt="Fashion models showcasing stylish clothing" loading="lazy">
 
-    <!-- FEATURED -->
-    <section class="section">
-        <h2>Featured Collection</h2>
-        <div class="grid" id="featured"></div>
-    </section>
+            <div class="hero-content">
+                <h2>Elevate Your Everyday Style</h2>
+
+                <p>
+                    Discover clothing and accessories that help
+                    you express confidence, creativity, and individuality.
+                </p>
+
+                <a href="collections.html" class="btn">
+                    Explore Collections
+                </a>
+            </div>
+        </section>
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome">
+            <h2>Welcome to Rantimi's Flair</h2>
+
+            <p>
+                Rantimi's Flair is a modern fashion brand dedicated
+                to helping people express themselves through stylish,
+                comfortable, and trend-inspired clothing.
+            </p>
+
+            <p>
+                Our collections combine timeless essentials with
+                contemporary fashion trends, creating looks that
+                work for every occasion.
+            </p>
+        </section>
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="featured-products">
+
+            <h2>Featured Products</h2>
+
+            <div id="featuredProducts" class="product-grid">
+                <!-- JavaScript Loads Featured Products -->
+            </div>
+
+        </section>
+
+        <!-- STYLE TIPS -->
+        <section class="style-tips">
+
+            <h2>Fashion Style Tips</h2>
+
+            <div class="tips-grid">
+
+                <article class="tip-card">
+                    <h3>Layer Smartly</h3>
+                    <p>
+                        Pair jackets and hoodies with neutral
+                        basics to create versatile outfits that
+                        work all year round.
+                    </p>
+                </article>
+
+                <article class="tip-card">
+                    <h3>Invest in Essentials</h3>
+                    <p>
+                        A quality white shirt, dark jeans, and
+                        clean sneakers can be styled for almost
+                        any occasion.
+                    </p>
+                </article>
+
+                <article class="tip-card">
+                    <h3>Accessorize Thoughtfully</h3>
+                    <p>
+                        Accessories add personality and can turn
+                        a simple outfit into a standout look.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-home">
+
+            <h2>Stay Connected</h2>
+
+            <p>
+                Subscribe for fashion updates, style inspiration,
+                and new arrivals.
+            </p>
+
+            <form id="newsletterForm">
+
+                <label for="subscriberName">
+                    Name
+                </label>
+
+                <input type="text" id="subscriberName" name="subscriberName" required>
+
+                <label for="subscriberEmail">
+                    Email
+                </label>
+
+                <input type="email" id="subscriberEmail" name="subscriberEmail" required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+            <p id="subscriptionMessage"></p>
+
+        </section>
+
+    </main>
 
     <footer>
-        <a href="references.html">References</a>
+
+        <p>
+            &copy; <span id="currentYear"></span>
+            Rantimi's Flair
+        </p>
+
+        <a href="references.html">
+            References
+        </a>
+
     </footer>
 
 </body>

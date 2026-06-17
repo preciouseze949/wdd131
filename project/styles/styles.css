@@ -13,6 +13,273 @@ header {
     padding: 1rem;
 }
 
+/* =======================
+   GLOBAL STYLES
+======================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F8F8F8;
+    color: #1A1A1A;
+    line-height: 1.6;
+}
+
+/* =======================
+   HEADER
+======================= */
+
+header {
+    background: #1A1A1A;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo h1 {
+    font-family: "Playfair Display", serif;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #D4AF37;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+nav a.active {
+    border-bottom: 2px solid #D4AF37;
+}
+
+/* =======================
+   HERO
+======================= */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #D4AF37;
+    color: #1A1A1A;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* =======================
+   SECTIONS
+======================= */
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.welcome,
+.featured-products,
+.style-tips,
+.contact-home,
+.page-banner {
+    background: white;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+/* =======================
+   PRODUCT GRID
+======================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* =======================
+   STYLE TIPS
+======================= */
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tip-card {
+    background: #fff;
+    padding: 1rem;
+    border-left: 4px solid #D4AF37;
+    border-radius: 5px;
+}
+
+/* =======================
+   FORMS
+======================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #1A1A1A;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #D4AF37;
+    color: #1A1A1A;
+}
+
+/* =======================
+   CONTACT PAGE
+======================= */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.business-hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.business-hours th,
+.business-hours td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* =======================
+   FOOTER
+======================= */
+
+footer {
+    background: #1A1A1A;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+/* =======================
+   MEDIA QUERIES
+======================= */
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero img {
+        height: 250px;
+    }
+
+    .hero-content {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 nav {
     margin-top: 10px;
 }

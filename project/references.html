@@ -3,23 +3,80 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="References page for Rantimi's Flair website project sources.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>References</title>
+    <meta name="author" content="Precious Anietem">
+
+    <title>References | Rantimi's Flair</title>
 
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
-    <h1>References</h1>
+    <header>
+        <h1>References</h1>
+    </header>
 
-    <ul>
-        <li>Unsplash (images)</li>
-        <li>Pexels (images)</li>
-        <li>Google Fonts</li>
-    </ul>
+    <main>
 
-    <a href="index.html">Back Home</a>
+        <section>
+
+            <h2>Images</h2>
+
+            <ul>
+                <li>Unsplash - https://unsplash.com (fashion, clothing, and lifestyle images)</li>
+                <li>Pexels - https://www.pexels.com (free stock fashion photography)</li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Fonts</h2>
+
+            <ul>
+                <li>Playfair Display - https://fonts.google.com/specimen/Playfair+Display</li>
+                <li>Poppins - https://fonts.google.com/specimen/Poppins</li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Content Inspiration</h2>
+
+            <ul>
+                <li>Fashion retail websites (general UI inspiration)</li>
+                <li>Modern e-commerce layout design patterns</li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Project Information</h2>
+
+            <p>
+                This website was created as part of the WDD 131 Web Development course
+                project for educational purposes only.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentYear"></span> Rantimi's Flair
+        </p>
+
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 
